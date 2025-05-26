@@ -1,0 +1,23 @@
+name: Hello World Workflow
+on:
+  push:
+    branches: [ main ]
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+    steps:
+      -  name: Checkout ocde
+         uses: actions/checkout@v3
+
+      -  name: Display system info
+         run : |
+           uname -a
+           pwd
+           ls -la
+      -  name: Display system info
+         run: echo "Hello Github Actions!"
+
+      -  name: Run bash script
+         run: |
+           chmod +x ./hello.sh
+           ./hello.sh
