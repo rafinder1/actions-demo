@@ -24,7 +24,7 @@ jobs:
       OS_TYPE: "Windows"
     steps:
       - name: Checkout code
-        uses: actions/chekout@v3
+        uses: actions/checkout@v3
 
       - name: Show OS info (Windows)
         run: |
