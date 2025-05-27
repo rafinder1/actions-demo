@@ -1,3 +1,5 @@
+name: Triggers and Runners Demo
+
 on:
   push:
     branches: [ main ]
